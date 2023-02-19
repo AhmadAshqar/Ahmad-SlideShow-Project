@@ -1,2 +1,2 @@
-# Ahmad-SlideShow-Project
- a javascript vanila html&bootstrap project
+# W081222MR-SLIDESHOW-APP
+ a javascript vanila html & bootstrap project
