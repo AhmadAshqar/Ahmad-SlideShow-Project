@@ -18,9 +18,8 @@ export const RETURN_TO_HOME_PAGE_LINK = document.getElementById(
   "return-to-home-page-link"
 );
 
-/******  slider ******/
-
-export const SLIDER_IMAGE = document.getElementById("slider-image")
-export const SLIDER_CREDITS = document.getElementById("slider-credits")
-export const SLIDER_PREV_BTN = document.getElementById("slider-prev-btn")
-export const SLIDER_NEXT_BTN = document.getElementById("slider-next-btn")
+/***** slider *****/
+export const SLIDER_IMAGE = document.getElementById("slider-image");
+export const SLIDER_CREDITS = document.getElementById("slider-credits");
+export const SLIDER_PREV_BTN = document.getElementById("slider-prev-btn");
+export const SLIDER_NEXT_BTN = document.getElementById("slider-next-btn");
