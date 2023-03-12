@@ -5,5 +5,5 @@ import "./users/models/User.js";
 import initialData from "./initial-data/initialData.js";
 
 window.pictures = initialData().pictures;
-
+console.log(pictures);
 renderSlider(pictures, 0);

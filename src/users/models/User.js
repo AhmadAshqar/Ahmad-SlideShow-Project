@@ -114,7 +114,7 @@ class User {
     return users;
   }
 
-  changePassword() { }
+  changePassword() {}
 
   get _id() {
     return this.#id;
@@ -144,49 +144,83 @@ class User {
 
 export default User;
 
-/* const test = {
-  email: "test@gmail.co.il",
-  password: "Aa1234!",
-  address: {
-    state: "usa",
-    country: "new-york",
-    city: "new-york",
-    street: "brodway",
-    houseNumber: 5,
-    zip: 123456,
-  },
-  phone: "050-0000000",
-  name: {
-    first: "david",
-    last: "yakin",
-  },
-};
+// const test = {
+//   email: "test@gmail.co.il",
+//   password: "Aa1234!",
+//   address: {
+//     state: "usa",
+//     country: "new-york",
+//     city: "new-york",
+//     street: "brodway",
+//     houseNumber: 5,
+//     zip: 123456,
+//   },
+//   phone: "050-0000000",
+//   name: {
+//     first: "david",
+//     last: "yakin",
+//   },
+// };
 
-const array = [test];
+// try {
+//   const user = new User(test);
 
-try {
-  const user = new User(test);
-  user.changeBizStatus(user);
+//   const userToUpdate = {
+//     _id: user._id,
+//     name: { first: "shula", last: "zaken" },
+//     phone: "054-9999999",
+//     address: {
+//       state: "",
+//       country: "israel",
+//       city: "tel-aviv",
+//       street: "shoham",
+//       houseNumber: 5,
+//       zip: 123456,
+//     },
+//     email: "walla@gmail.co.il",
+//   };
 
-  user.update(
-    {
-      _id: user._id,
-      name: { first: "shula", last: "zaken" },
-      phone: "054-9999999",
-      address: {
-        state: "",
-        country: "israel",
-        city: "tel-aviv",
-        street: "shoham",
-        houseNumber: 5,
-        zip: 123456,
-      },
-      email: "walla@gmail.co.il",
-    },
-    array
-  );
-  console.log(user);
-} catch (error) {
-  console.log(error.message);
-}
- */
+//   const array = [user];
+//   User.findOneAndUpdate(userToUpdate, array);
+
+//   console.log(array);
+// } catch (error) {
+//   console.log(error.message);
+// }
+
+// try {
+//   const user = new User(test);
+//   user.changeBizStatus(user);
+
+//   user.update(
+// {
+//   _id: user._id,
+//   name: { first: "shula", last: "zaken" },
+//   phone: "054-9999999",
+//   address: {
+//     state: "",
+//     country: "israel",
+//     city: "tel-aviv",
+//     street: "shoham",
+//     houseNumber: 5,
+//     zip: 123456,
+//   },
+//   email: "walla@gmail.co.il",
+// },
+// array
+//   );
+//   console.log(user);
+// } catch (error) {
+//   console.log(error.message);
+// }
+
+// const array = ["one", "two", "three"];
+// const obj = {};
+
+// const testIsArray = arrayFromClient => {
+//   console.log(typeof arrayFromClient);
+//   console.log(Array.isArray(arrayFromClient));
+// };
+
+// testIsArray(array);
+// testIsArray(obj);
