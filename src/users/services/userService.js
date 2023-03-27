@@ -42,9 +42,9 @@ export const login = () => {
         if (existingUserData) {
           const existingUserObj = JSON.parse(existingUserData);
           const updatedUserObj = { ...existingUserObj, ...userData };
-          localStorage.setItem(`user_${user._id}`, JSON.stringify(updatedUserObj));
+          localStorage.setItem(`user`, JSON.stringify(updatedUserObj));
         } else {
-          localStorage.setItem(`user_${user._id}`, JSON.stringify(userData));
+          localStorage.setItem(`user`, JSON.stringify(userData));
         }
         onChangePage(PAGES.HOME);
         const logout = document.getElementById("logout-page-link")

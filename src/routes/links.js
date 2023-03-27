@@ -10,6 +10,7 @@ import {
 import { onChangePage } from "./router.js";
 import { createPicture } from "./../pictures/services/pictureService.js";
 import { login } from "./../users/services/userService.js";
+import { signup } from "../users/services/signupService.js";
 
 /********* האזנה לאירועים **********/
 
@@ -20,7 +21,10 @@ CREATE_PIC_PAGE_LINK.addEventListener("click", () => {
   onChangePage(PAGES.CREATE_PIC);
   createPicture();
 });
-SIGNUP_PAGE_LINK.addEventListener("click", () => onChangePage(PAGES.SIGNUP));
+SIGNUP_PAGE_LINK.addEventListener("click", () => {
+  onChangePage(PAGES.SIGNUP);
+  signup();
+});
 LOGIN_PAGE_LINK.addEventListener("click", () => {
   onChangePage(PAGES.LOGIN);
   login();

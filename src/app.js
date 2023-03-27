@@ -5,6 +5,9 @@ import "./users/models/User.js";
 import initialData from "./initial-data/initialData.js";
 import "./users/services/localStorageService.js";
 import "./users/services/signupService.js";
+import "./users/services/logoutService.js";
+import "../src/pictures/services/About.js";
+
 
 initialData()
   .then(data => {
