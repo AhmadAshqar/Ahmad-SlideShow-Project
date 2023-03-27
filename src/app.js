@@ -3,7 +3,14 @@ import renderSlider from "./pictures/components/renderSlider.js";
 import "./pictures/models/Picture.js";
 import "./users/models/User.js";
 import initialData from "./initial-data/initialData.js";
+import "./users/services/localStorageService.js";
+import "./users/services/signupService.js";
 
-window.pictures = initialData().pictures;
-console.log(pictures);
-renderSlider(pictures, 0);
+initialData()
+  .then(data => {
+    window.pictures = data.pictures;
+    window.users = data.users;
+    renderSlider(pictures, 0);
+    window.user = null;
+  })
+  .catch(error => console.log(error));

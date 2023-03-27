@@ -62,7 +62,7 @@ class User {
 
   checkPassword(password) {
     const regex = PASSWORD_REGEX;
-    const isExist = regex.test(password);
+    const isExist = password.match(regex);
     if (!isExist)
       throw new Error(
         "The password must contain at least one uppercase letter in English. One lowercase letter in English. Four numbers and one of the following special characters !@#$%^&*-"
@@ -114,12 +114,15 @@ class User {
     return users;
   }
 
-  changePassword() {}
+  changePassword() { }
 
   get _id() {
     return this.#id;
   }
   get isAdmin() {
+    return this.#isAdmin;
+  }
+  get isBusiness() {
     return this.#isAdmin;
   }
   get name() {
@@ -145,20 +148,20 @@ class User {
 export default User;
 
 // const test = {
-//   email: "test@gmail.co.il",
+//   email: "regular@gmail.co.il",
 //   password: "Aa1234!",
 //   address: {
 //     state: "usa",
 //     country: "new-york",
 //     city: "new-york",
-//     street: "brodway",
+//     street: "broadway",
 //     houseNumber: 5,
 //     zip: 123456,
 //   },
 //   phone: "050-0000000",
 //   name: {
-//     first: "david",
-//     last: "yakin",
+//     first: "regular",
+//     last: "user",
 //   },
 // };
 
