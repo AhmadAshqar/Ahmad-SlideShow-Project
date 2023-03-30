@@ -27,8 +27,7 @@ export const login = () => {
   const handleLoginSubmit = data => {
     console.log(data);
     try {
-      const email = document.getElementById('login-email-field').value;
-      const password = document.getElementById('login-password-field').value;
+      const { email, password } = data
       const user = users.find(u => u.email === email && u.password === password);
       if (!user) {
         throw new Error('User email or password are incorrect');
